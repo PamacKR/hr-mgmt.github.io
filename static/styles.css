@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCtZ6Hw5aXo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 18px !important;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+button {
+    background-color: #e0e0e0;
+    box-shadow: inset -2px -2px 4px #acacac,
+                inset 2px 2px 4px #ffffff,
+                1px 1px 2px #acacac,
+                -1px -1px 2px #ffffff;
+}
+.form-control, button{
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 26px;
+    border: none;
+    font-size:25px;
+}
+
+.form-control{
+    box-shadow: inset 2px 2px 4px #c4c4c4,
+                inset -2px -2px 4px #ffffff,
+                -1px -1px 2px #c4c4c4,
+                1px 1px 2px #ffffff;
+}
+
+#search-btn {
+    position: relative;
+    left: 25px;
+    top: 24px;
+    transform: translate(-50%, -50%);
+}
+
+.input-group{
+    padding-bottom: 17px;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: 600 !important;
+    font-style: normal;
+    font-size: 25px !important;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    text-align: center !important;
+}
+
+th{
+    background-color: #e0e0e0;
+    box-shadow: inset -2px -2px 4px #acacac,
+                inset 2px 2px 4px #ffffff,
+                1px 1px 2px #acacac,
+                -1px -1px 2px #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+td{
+    box-shadow: inset -2px -2px 4px #c4c4c4,
+                inset 2px 2px 4px #ffffff,
+                1px 1px 2px #c4c4c4,
+                -1px -1px 2px #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+.btn {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #d0d0d0;
+    transform: scale(0.98);
+}
+
+.form-control {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #808080;
+    box-shadow: 0 0 6px rgba(128, 128, 128, 0.5);
+}
