@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Employee Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <div class="container mt-4">
+        <a href="{{ url_for('index') }}" class="btn btn-link" style="text-decoration:none; color: #000;">
+            <span class="material-symbols-outlined" style="
+            font-size: 40px !important;
+            position: relative;
+            top: 7px !important;">home</span>
+        </a>
+        <h1 class="mb-3" style="display: inline-block; margin-top: 12px;"> | Edit Employee Data</h1>
+        <form method="post" action="/edit/{{ employee[0] }}">
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" class="form-control" value="{{ employee[1] }}" required style="
+                position: relative;
+                left: 10px;">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" class="form-control" value="{{ employee[2] }}" required style="
+                position: relative;
+                left: 10px;">
+            </div>
+            <div class="form-group">
+                <label>Age:</label>
+                <input type="number" name="age" class="form-control" value="{{ employee[3] }}" required style="
+                position: relative;
+                left: 23px;">
+            </div>
+            <div class="form-group">
+                <label>Date:</label>
+                <input type="text" name="date" class="form-control" value="{{ employee[4] }}" required style="
+                position: relative;
+                left: 15px;">
+            </div>
+            <div class="form-group">
+                <label>Salary:</label>
+                <input type="number" name="salary" class="form-control" value="{{ employee[5] }}" required style="
+                position: relative;
+                left: 3px;">
+            </div>
+            <button type="submit" class="btn btn-primary"><b>Save Changes</b></button>
+        </form>
+    </div>
+</body>
+</html>

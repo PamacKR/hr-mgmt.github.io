@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+</head>
+<body>
+    <div class="container">
+        <a href="{{ url_for('index') }}" class="btn btn-link" style="text-decoration:none; color: #000;">
+            <span class="material-symbols-outlined" style="
+            font-size: 40px !important;
+            position: relative;
+            top: 7px !important;">home</span>
+        </a>
+        <h1 class="mb-3" style="display: inline-block; margin-top: 12px;"> | Add Employee</h1>
+        <form method="post" action="/add">
+            <div class="form-row">
+                <div class="col-md-3">
+                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" name="age" class="form-control" placeholder="Age" required>
+                </div>
+                <div class="col-md-2">
+                    <input type="date" name="date" class="form-control" placeholder="Date" style="width: 314px; color: #757575;" required>
+                </div>
+                <div class="col-md-2">
+                    <input type="number" name="salary" class="form-control" placeholder="Salary" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><b>Add Employee</b></button>
+        </form>
+    </div>
+</body>
+</html>
